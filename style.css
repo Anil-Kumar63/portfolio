@@ -13,6 +13,7 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Navbar Styles */
 .navbar {
     top: 0;
     width: 100%;
@@ -21,6 +22,7 @@ body {
     font-style: oblique;
     font-weight: bolder;
     padding: 10px 20px;
+    max-height: max-content;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -36,12 +38,12 @@ body {
 }
 
 .navbar h1 {
-    margin: 0; /* Remove default margin */
+    margin: 0; 
     font-size: 28px;
     color: #4CAF50;
     cursor: pointer;
     transition: transform 0.3s, color 0.3s, text-shadow 0.3s;
-    padding: 0; /* Remove padding if any */
+    padding: 0; 
 }
 
 .navbar:hover {
@@ -49,7 +51,7 @@ body {
 }
 
 .nav-links li {
-    margin: 0 8px; /* Reduce margin between nav items */
+    margin: 0 8px; 
 }
 
 .nav-links a {
@@ -87,10 +89,11 @@ body {
     color: #4CAF50;
 }
 
+/* Responsive Design for Navbar */
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
-        flex-direction: column;
+        display: none; 
+        flex-direction: column; 
         width: 100%;
         background: rgba(11, 41, 71, 0.9);
         position: absolute;
@@ -100,11 +103,11 @@ body {
     }
 
     .nav-links.active {
-        display: flex;
+        display: flex; 
     }
 
     .mobile-menu {
-        display: block;
+        display: block; 
     }
 }
 
@@ -117,15 +120,26 @@ body {
     align-items: center;
     justify-content: center;
     text-align: left;
-    padding: 280px 20px;
+    padding: 280px 20px; /* Large padding for larger screens */
     color: white;
-    animation: fadeIn 1s ease-in-out;
+    animation: slideUp 1s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3rem; /* Large font size for larger screens */
     color: #cdf3cd;
-    animation: slideIn 1s ease-in-out;
+    animation: slideIn 0.1s ease-in-out;
 }
 
 @keyframes slideIn {
@@ -144,13 +158,13 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 48px;
+    font-size: 48px; 
     margin-bottom: 20px;
-    animation: fadeIn 1s ease-in-out;
+    animation: slideIn 1.7s ease-in-out;
 }
 
 .dynamic-role {
-    font-size: 2rem;
+    font-size: 2rem; 
     color: #bfdcda;
     margin: 20px 0 0px;
     white-space: nowrap;
@@ -180,6 +194,32 @@ body {
 .btn-group .btn:hover {
     background: #5fcf84;
     transform: translateY(-2px);
+}
+
+/* Responsive Design for Hero Section */
+@media (max-width: 600px) {
+    .hero {
+        height: 100vh; 
+        padding: 100px 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .dynamic-role {
+        font-size: 1.7rem; 
+    }
+
+    .btn-group .btn {
+        padding: 8px 12px; 
+        font-size: 0.9rem; 
+    }
 }
 
 /* Section Styles */
@@ -239,11 +279,11 @@ section:hover {
 /* Responsive Design */
 @media (max-width: 600px) {
     .section-title {
-        font-size: 2rem;
+        font-size: 2rem; /* Smaller title size */
     }
 
     .about-content {
-        font-size: 1rem;
+        font-size: 1rem; /* Smaller font size */
     }
 }
 
@@ -357,7 +397,7 @@ section:hover {
 /* Responsive Design */
 @media screen and (max-width: 900px) {
     .timeline::after {
-        left: 20px;
+        left: 14px;
     }
 
     .timeline-item {
@@ -591,7 +631,7 @@ section:hover {
 /* Footer */
 .footer {
     text-align: center;
-    padding: 15px; /* Increased from 10px to 20px */
+    padding: 20px; 
     margin: 0;
     background: linear-gradient(90deg, rgba(11, 41, 71, 0.9), rgba(15, 47, 9, 0.9));
     color: white;
@@ -616,11 +656,6 @@ section:hover {
     .contact-form textarea {
         width: 90%;
     }
-}
-
-.skill-category:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Work Experience Section */
@@ -671,6 +706,25 @@ section:hover {
     color: #4CAF50;
 }
 
+/* Responsive Design for Work Experience Section */
+@media (max-width: 600px) {
+    .work-experience-content {
+        padding: 20px; 
+    }
+
+    .work-card {
+        padding: 20px; 
+        margin: 10px 0; 
+        font-size: 1rem; 
+    }
+
+    .work-card ul {
+        margin-left: 20px; 
+        padding-left: 10px; 
+    }
+}
+
+/* GitHub Link */
 .github-link {
     display: inline-block;
     margin-top: 15px;
@@ -706,14 +760,10 @@ section:hover {
 
 .projects-container {
     display: grid;
-    flex-direction: column;
     gap: 20px;
     max-width: 800px;
     margin: 0 auto;
-    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .project-card {
@@ -809,8 +859,8 @@ section:hover {
 }
 
 .social-link {
-    width: 40px; /* Increased size for better visibility */
-    height: 40px; /* Increased size for better visibility */
+    width: 40px; 
+    height: 40px; 
     background: linear-gradient(90deg, rgb(203, 214, 187), rgb(186, 133, 123));
     border-radius: 50%;
     display: flex;
@@ -818,7 +868,7 @@ section:hover {
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-    position: relative; /* For positioning the icon */
+    position: relative; 
 }
 
 .social-link:hover {
@@ -840,90 +890,102 @@ section:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: row; /* Stack items vertically */
-        align-items: flex-start; /* Align items to the start */
-        padding: 10px; /* Reduce padding */
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 10px; 
     }
 
     .nav-links {
-        display: none; /* Hide nav links by default */
+        display: none; 
     }
 
     .mobile-menu {
-        display: block; /* Show mobile menu */
+        display: block; 
     }
 
     .hero {
-        padding: 100px 20px; /* Reduce padding for mobile */
+        padding: 100px 20px; 
     }
 
     section {
-        padding: 20px; /* Reduce padding */
+        padding: 20px; 
     }
 
     .contact-container {
-        flex-direction: column; /* Stack contact form and details */
+        flex-direction: column;
     }
 
     .contact-form,
     .contact-details {
-        width: 100%; /* Full width for forms */
-        margin-bottom: 20px; /* Space between forms */
+        width: 100%; 
+        margin-bottom: 20px; 
     }
 
     .projects-container {
-        flex-direction: column; /* Stack project cards */
-        align-items: center; /* Center align */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .project-card {
-        width: 90%; /* Full width for project cards */
+        width: 90%; 
     }
 
     .social-links {
-        left: 10px; /* Adjust position for smaller screens */
-        top: 1; /* Reset top position */
-        bottom: 20px; /* Position at the bottom */
+        left: 10px; 
+        top: 1; 
+        bottom: 20px; 
     }
 }
 
 /* Additional Media Query for Smaller Devices */
-
 @media (max-width: 600px) {
-    
     section {
-        padding: 30px 10px; /* Reduced padding for smaller screens */
-        margin: 10px 0; /* Reduced margin for smaller screens */
+        padding: 30px 10px;
+        margin: 10px 0; 
         border-radius: 10px;
         background: rgba(255, 255, 255, 0.1);
         transition: background 0.3s, transform 0.3s;
-        min-height: auto; /* Adjusted to auto for smaller screens */
+        min-height: auto; 
     }
     
     .section-title {
-        font-size: 2rem; /* Adjusted font size for smaller screens */
-        text-align: center;
-        margin: 20px 0; /* Reduced margin for smaller screens */
+        font-size: 2rem; 
+        text-align: center; 
+        margin: 20px 0;
     }
 
     .about-content {
-        font-size: 1rem; /* Smaller font size */
-        padding: 0 10px; /* Added padding for better readability */
+        font-size: 1rem; 
+        padding: 0 10px; 
     }
 
     .contact-form input,
     .contact-form textarea {
-        width: 90%; /* Full width for inputs */
-        padding: 10px; /* Added padding for better touch targets */
+        width: 90%; 
+        padding: 10px; 
     }
 
     .projects-container {
-        grid-template-columns: 1fr; /* Single column layout */
-        padding: 0 10px; /* Added padding for better layout */
+        grid-template-columns: 1fr; 
+        padding: 0 10px; 
     }
 
     .project-card {
-        width: 100%; /* Full width for project cards */
-        margin-bottom: 20px; /* Added margin for spacing between cards */
+        width: 100%; 
+        margin-bottom: 20px; 
     }
-}
+
+    .social-links {
+        left: 10px; 
+        gap: 10px;
+
+    .social-link {
+        width: 35px; 
+        height: 35px; 
+    }
+
+    .social-link img {
+        width: 20px; 
+        height: 20px; 
+    }
+    }}
