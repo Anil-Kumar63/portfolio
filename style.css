@@ -840,7 +840,7 @@ section:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: row; /* Stack items vertically */
         align-items: flex-start; /* Align items to the start */
         padding: 10px; /* Reduce padding */
     }
@@ -888,25 +888,42 @@ section:hover {
 }
 
 /* Additional Media Query for Smaller Devices */
+
 @media (max-width: 600px) {
+    
+    section {
+        padding: 30px 10px; /* Reduced padding for smaller screens */
+        margin: 10px 0; /* Reduced margin for smaller screens */
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        transition: background 0.3s, transform 0.3s;
+        min-height: auto; /* Adjusted to auto for smaller screens */
+    }
+    
     .section-title {
-        font-size: 2rem; /* Smaller title size */
+        font-size: 2rem; /* Adjusted font size for smaller screens */
+        text-align: center;
+        margin: 20px 0; /* Reduced margin for smaller screens */
     }
 
     .about-content {
         font-size: 1rem; /* Smaller font size */
+        padding: 0 10px; /* Added padding for better readability */
     }
 
     .contact-form input,
     .contact-form textarea {
         width: 90%; /* Full width for inputs */
+        padding: 10px; /* Added padding for better touch targets */
     }
 
     .projects-container {
         grid-template-columns: 1fr; /* Single column layout */
+        padding: 0 10px; /* Added padding for better layout */
     }
 
     .project-card {
         width: 100%; /* Full width for project cards */
+        margin-bottom: 20px; /* Added margin for spacing between cards */
     }
 }
