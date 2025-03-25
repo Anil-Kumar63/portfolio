@@ -4,131 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Anil Kumar</title>
-   <link rel="stylesheet" href="./style.css">
-   <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 onclick="scrollToTop()">Anil Kumar</h1>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
+    </nav>
 
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello,<br> I'm Anil Kumar</h1>
+            <div class="dynamic-role" id="dynamicRole"></div>
+            <div class="btn-group">
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="#contact" class="btn">Contact Me</a>
+                <a href="./RESU.pdf" target="_blank" class="btn">View and Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>Hi, I'm <strong>Anil Kumar</strong>, a passionate Full-Stack Web Developer with expertise in Python, PHP, React.js, SQL, and modern development frameworks. I have hands-on experience building interactive and dynamic applications, including a Blood Bank Management System during my internship at HAEGL Technologies Pvt Ltd.</p>
+            <p>I enjoy solving complex problems and continuously expanding my knowledge in backend development, databases, and web technologies. Currently, I'm enhancing my skills in data analysis and exploring full-stack web development at PySpiders.</p>
+            <p>I'm eager to collaborate on innovative projects and contribute to the tech industry with my skills and dedication.</p>
+        </div>
+    </section>
     
-            </head>
-            <body>
-                <!-- Navbar -->
-                <nav class="navbar">
-                    <h1 onclick="scrollToTop()">Anil Kumar</h1> <!-- Home link to scroll to top -->
-                    <ul class="nav-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#work-experience">Work Experience</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div> <!-- Mobile menu icon -->
-                </nav>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <span class="passout-year">2019</span>
+                <h3>Secondary School Leaving Certificate (SSLC)</h3>
+                <p><strong>Shantiniketan Public School</strong></p>
+                <p>Board: Karnataka State Board</p>
+                <p>Percentage: 85.12%</p>
+            </div>
+            <div class="timeline-item right">
+                <span class="passout-year">2021</span>
+                <h3>Pre-University Course (PUC)</h3>
+                <p><strong>SKDS College</strong></p>
+                <p>Board: Karnataka Pre-University</p>
+                <p>Percentage: 85%</p>
+            </div>
+            <div class="timeline-item left">
+                <span class="passout-year">2024</span>
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+                <p><strong>Karnatak University, Karnataka Science College</strong></p>
+                <p>CGPA: 7.7</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <p><b>Python</b>, JavaScript, PHP</p>
+            </div>
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <p>HTML, CSS, JavaScript, React.js</p>
+            </div>
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <p>Python, PHP</p>
+            </div>
+            <div class="skill-category">
+                <h3>Databases & SQL</h3>
+                <p><b>MySQL</b>, MS-SQL, SQLite, Oracle 11g</p>
+            </div>
+            <div class="skill-category">
+                <h3>OOP Principles</h3>
+                <p>Encapsulation, Inheritance, Polymorphism, Abstraction</p>
+            </div>
+            <div class="skill-category">
+                <h3>Version Control</h3>
+                <p>Git, GitHub</p>
+            </div>
+           
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <p>Communication, Teamwork, Adaptability</p>
+            </div>
+            <!--<div class="skill-category">
+                <h3>Data & Business Intelligence Tools</h3>
+                <p><b>Power BI:</b> Data Modeling, DAX, Dashboards, KPI Tracking, Power Query</p>
+                <p><b>Microsoft Excel:</b> VLOOKUP, HLOOKUP, INDEX-MATCH, Data Validation, VBA Macros</p>
+            </div>-->
+        </div>
+    </section>
+
+    <section id="work-experience">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="work-experience-content">
+            <div class="work-card">
+                <h3>Intern | HAEGL Technologies Pvt Ltd | 2024</h3>
+                <p><strong>Role:</strong> Frontend Development</p>
+                <p><strong>Project:</strong> Blood Bank Management System</p>
+                <ul>
+                    <li>Designed and developed a responsive and user-friendly UI for the web application.</li>
+                    <li>Created interactive UI components using HTML, CSS, JavaScript.</li>
+                    <li>Ensured seamless user experience by implementing modern UI/UX design principles.</li>
+                    <li>Collaborated with backend developers to ensure smooth data handling and functionality.</li>
+                    <li>Conducted UI testing and debugging to enhance performance and usability.</li>
+                </ul>
+                <a href="https://github.com/Anil-Kumar63/Blood-Bank-Management-System" target="_blank" class="github-link">View Project on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card" onclick="showProjectInfo('project1')">
+                <h3>Personal Portfolio Website</h3>
+                <p>Developed a fully responsive portfolio website using HTML, CSS, Bootstrap, and JavaScript.</p>
+                <a href="https://github.com/yourusername/portfolio" target="_blank">View Code</a>
+            </div>
+            <div class="project-card" onclick="showProjectInfo('project2')">
+                <h3>Data Analysis Project (Python & SQL)</h3><h6 style="color: #24c704;">Ongoing</h6>
+                <p>Developed a data-driven project to analyze employee performance and trends.</p>
+                <a href="https://github.com/yourusername/data-analysis" target="_blank">View Code</a>
+            </div>
             
-                <!-- Hero Section -->
-                <section id="home" class="hero">
-                    <div class="hero-content">
-                        <h1>Hello,<br> I'm Anil Kumar</h1>
-                        <div class="dynamic-role" id="dynamicRole"></div>
-                       
-                        <div class="btn-group">
-                            <a href="#projects" class="btn">View My Work</a>
-                            <a href="#contact" class="btn">Contact Me</a>
-                            <a href="path/to/your/resume.pdf" target="_blank" class="btn">View and Download Resume</a> <!-- Resume button -->
-                        </div>
-                    </div>
-                </section>
-            
-                <!-- About Section -->
-                <section id="about">
-                    <h2 class="section-title">About Me</h2>
-                    <div class="about-content">
-                        <p>Hi, I'm <strong>Anil Kumar</strong>, a passionate Full-Stack Web Developer with expertise in Python, Java, PHP, React.js, SQL, and other web technologies. I have hands-on experience building interactive and dynamic applications, including a Blood Bank Management System during my internship at HAEGL Technologies Pvt Ltd.</p>
-                        <p>I enjoy solving complex problems and continuously expanding my knowledge in backend development, databases, and data analysis. Currently, I'm enhancing my skills in Power BI and exploring full-stack web development at PySpiders.</p>
-                        <p>I'm eager to collaborate on innovative projects and contribute to the tech industry with my skills and dedication.</p>
-                    </div>
-                </section>
-            
-                <!-- Skills Section -->
-                <section id="skills">
-                    <h2 class="section-title">My Skills</h2>
-                    <div class="skills-container">
-                        <div class="skill-category">
-                            <h3>Programming Languages</h3>
-                            <p><b>Python</b>, JavaScript, PHP</p>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Frontend</h3>
-                            <p>HTML, CSS, JavaScript, React.js</p>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Backend</h3>
-                            <p>Python (Django), PHP</p>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Databases & SQL</h3>
-                            <p><b>MySQL</b>, PostgreSQL, MS-SQL, SQLite, Oracle 11g</p>
-                        </div>
-                        <div class="skill-category">
-                            <h3>OOP Principles</h3>
-                            <p>Encapsulation, Inheritance, Polymorphism, Abstraction</p>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Version Control</h3>
-                            <p>Git, GitHub</p>
-                        </div>
-                        <div class="skill-category">
-                            <h3>API Development</h3>
-                            <p>RESTful APIs, CRUD operations</p>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Soft Skills</h3>
-                            <p>Communication, Teamwork, Adaptability</p>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Data & Business Intelligence Tools</h3>
-                            <p><b>Power BI:</b> Data Modeling, DAX, Dashboards, KPI Tracking, Power Query</p>
-                            <p><b>Microsoft Excel:</b> VLOOKUP, HLOOKUP, INDEX-MATCH, Data Validation, VBA Macros</p>
-                        </div>
-                    </div>
-                </section>
-            
-                <!-- Work Experience Section -->
-                <section id="work-experience">
-                    <h2 class="section-title">Work Experience</h2>
-                    <div class="work-experience-content">
-                        <div class="work-card">
-                            <h3>Intern | HAEGL Technologies Pvt Ltd | 2024</h3>
-                            <p><strong>Role:</strong> Frontend Developer</p>
-                            <p><strong>Project:</strong> Blood Bank Management System</p>
-                            <ul>
-                                <li>Designed and developed a responsive and user-friendly UI for the web application.</li>
-                                <li>Created interactive UI components using HTML, CSS, JavaScript, and React.</li>
-                                <li>Ensured seamless user experience by implementing modern UI/UX design principles.</li>
-                                <li>Collaborated with backend developers to integrate API responses effectively.</li>
-                                <li>Conducted UI testing and debugging to enhance performance and usability.</li>
-                            </ul>
-                            <a href="https://github.com/yourusername/blood-bank-management-system" target="_blank" class="github-link">View Project on GitHub</a>
-                        </div>
-                    </div>
-                </section>
-            
-                <!-- Projects Section -->
-                <section id="projects">
-                    <h2 class="section-title">My Projects</h2>
-                    <div class="projects-container">
-                        <div class="project-card" onclick="showProjectInfo('project1')">
-                            <h3>Personal Portfolio Website</h3>
-                            <p>Developed a fully responsive portfolio website using HTML, CSS, Bootstrap, and JavaScript.</p>
-                            <a href="https://github.com/yourusername/portfolio" target="_blank">View Code</a>
-                        </div>
-                        <div class="project-card" onclick="showProjectInfo('project2')">
-                            <h3>Data Analysis Project (Python & SQL)</h3>
-                            <p>Developed a data-driven project to analyze employee performance and trends.</p>
-                            <a href="https://github.com/yourusername/data-analysis" target="_blank">View Code</a>
-                        </div>
-                        <!-- Add more            project cards as needed -->
         </div>
 
         <div id="project-info" class="project-info">
@@ -137,11 +152,10 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
         <h2 class="section-title">Get in Touch</h2>
         <div class="contact-container">
-            <form id="contactForm" class="contact-form">
+            <form id="contactForm" class="contact-form"  >
                 <input type="text" id="name" placeholder="Your Name" required>
                 <input type="email" id="email" placeholder="Your Email" required>
                 <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
@@ -149,11 +163,11 @@
             </form>
             <div class="contact-details">
                 <h3>Contact Information</h3>
-                <p><span role="img" aria-label="Email">📧</span> <a href="mailto:anil.kumar@example.com">anil.kumar@example.com</a></p>
-                <p><span role="img" aria-label="Phone">📞</span> <a href="tel:+1234567890">+1234567890</a></p>
-                <p><span role="img" aria-label="Location">📍</span> Your City, Your Country</p>
+                <p><span role="img" aria-label="Email">📧</span> <a href="mailto:anil.kumar@example.com">anilhhosamani@gmail.com</a></p>
+                <p><span role="img" aria-label="Phone">📞</span> <a href="tel:+1234567890">6361XXXXXX</a></p>
+                <p><span role="img" aria-label="Location">📍</span> <a href="">Bengaluru, Karnataka</a></p>
                 <p style="margin-top: 10px;">
-                    <a href="path/to/your/resume.pdf" target="_blank" class="btn">View and Download Resume</a>
+                    <a style="color: white; margin-top: 15px;" href="path/to/your/resume.pdf" target="_blank" class="btn">My Resume</a>
                 </p>
             </div>
         </div>
@@ -163,38 +177,29 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
-        Made with ❤️ by Anil Kumar &copy; <span id="year"></span> | <span id="current-time"></span>
+       <strong> Made with ❤️ by Anil Kumar &copy; <span id="year"></span> | <span id="current-time"></span></strong>
     </footer>
 
-    <!-- Back to Top Button -->
     <button class="back-to-top" onclick="scrollToTop()">⬆</button>
 
-    <!-- Social Media Links -->
     <div class="social-links">
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-link">
+        <a href="https://www.linkedin.com/in/anil-kumar-baa094352/" target="_blank" class="social-link">
             <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn">
-        </a>
-        <a href="https://yourresume.com" target="_blank" class="social-link">
-            <img src="https://img.icons8.com/ios-filled/50/000000/resume.png" alt="Resume">
         </a>
         <a href="#contact" class="social-link">
             <img src="https://img.icons8.com/ios-filled/50/000000/contact-card.png" alt="Contact">
         </a>
-        <a href="mailto:anil.kumar@example.com" class="social-link">
+        <a href="mailto:anilhhosamani@gmail.com" class="social-link">
             <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Email">
         </a>
-        <a href="https://github.com/yourusername" target="_blank" class="social-link">
+        <a href="https://github.com/Anil-Kumar63" target="_blank" class="social-link">
             <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub">
         </a>
-        <a href="https://www.instagram.com/yourprofile" target="_blank" class="social-link">
+       <!-- <a href="https://www.instagram.com/yourprofile" target="_blank" class="social-link">
             <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram">
-        </a>
+        </a> -->
     </div>
+    <script src="./script.js"></script>
 </body>
-</html>     
-
-
-
-
+</html>
