@@ -1,12 +1,15 @@
 const roles = [
+    "Software Tester",  
+    "Software Engineer",  
     "Full-Stack Developer",
     "Web Developer",
     "Frontend Developer",
     "Data Engineer",
     "SQL Developer",
     "Backend Developer",
-    //"Power BI Developer"
+    //"Power BI Developer" 
 ];
+
 
 let currentRoleIndex = 0;
 const dynamicRoleElement = document.getElementById("dynamicRole");
