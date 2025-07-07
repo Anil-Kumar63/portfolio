@@ -1,5 +1,5 @@
 # 🌐 Personal Portfolio Website
- This website showcases my skills, projects, and experience in **Full-Stack Web Development and Data Analysis**.
+ This website showcases my skills, projects, and experience in **Full-Stack Web Development**.
 
 ## 🛠 Tech Stack
 - **Frontend:** HTML, CSS, JavaScript  
