@@ -1,11 +1,10 @@
 const roles = [
-    "Software Tester",  
+     
     "Software Engineer",  
     "Full-Stack Developer",
     "Web Developer",
     "Frontend Developer",
-    "Data Engineer",
-    "SQL Developer",
+   
     "Backend Developer",
     //"Power BI Developer" 
 ];
